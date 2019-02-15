@@ -19,6 +19,12 @@
     </properties>
 
     <dependencies>
+        <!--c3p0数据库连接池-->
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.5.2</version>
+        </dependency>
         <!--jdbc连接方式组件-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -35,11 +41,10 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.0.0</version>
         </dependency>
-        <!--mysql连接组件-->
+        <!--引入数据库种类通信驱动-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
         </dependency>
         <!--spring测试启动组件-->
         <dependency>
@@ -48,7 +53,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <!--编译项目启动类-->
     <build>
         <plugins>
             <plugin>
