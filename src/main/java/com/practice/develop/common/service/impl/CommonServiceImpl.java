@@ -18,12 +18,5 @@ import java.util.List;
 public class CommonServiceImpl implements CommonService {
     @Autowired
     private JdbcTemplate jdbcTemplate;
-    @Autowired
-    private CommonDao commonDao;
 
-    public String getValue() {
-        String sql = "";
-        jdbcTemplate.queryForMap(sql);
-        return null;
-    }
 }

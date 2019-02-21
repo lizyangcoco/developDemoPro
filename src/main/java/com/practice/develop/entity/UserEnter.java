@@ -1,8 +1,6 @@
 package com.practice.develop.entity;
 
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -13,50 +11,48 @@ import java.util.Date;
 @Entity
 @Table(name = "user_table")
 @NoArgsConstructor
-@Getter
-@Setter
 public class UserEnter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer ID;
     /*登陆账户*/
-    @Column(name = "user_name",columnDefinition = "varchar(100)")
+    @Column(name = "user_name", columnDefinition = "varchar(100)")
     private String userName;
 
     /*用户密码*/
-    @Column(name = "pass_word",columnDefinition = "varchar(100)")
+    @Column(name = "pass_word", columnDefinition = "varchar(100)")
     private String passWord;
 
     /*登陆姓名*/
-    @Column(name = "real_name",columnDefinition = "varchar(100)")
+    @Column(name = "real_name", columnDefinition = "varchar(100)")
     private String realName;
 
     /*选票类型*/
-    @Column(name = "vote_type",columnDefinition = "varchar(10)")
+    @Column(name = "vote_type", columnDefinition = "varchar(10)")
     private String voteType;
 
     /*角色*/
-    @Column(name = "role",columnDefinition = "varchar(20)")
+    @Column(name = "role", columnDefinition = "varchar(20)")
     private String role;
 
     /*所属部门*/
-    @Column(name = "department",columnDefinition = "varchar(100)")
+    @Column(name = "department", columnDefinition = "varchar(100)")
     private String department;
 
     /*个人邮件*/
-    @Column(name = "email",columnDefinition = "varchar(100)")
+    @Column(name = "email", columnDefinition = "varchar(100)")
     private String email;
 
     /*个人电话*/
-    @Column(name = "phone_num",columnDefinition = "varchar(100)")
+    @Column(name = "phone_num", columnDefinition = "varchar(100)")
     private String phoneNum;
 
     /*创建时间*/
-    @Column(name = "create_time",columnDefinition = "date")
+    @Column(name = "create_time", columnDefinition = "date")
     private Date createTime;
 
     /*更新时间*/
-    @Column(name = "update_time",columnDefinition = "date")
+    @Column(name = "update_time", columnDefinition = "date")
     private Date update_time;
 
     public String getUserName() {
