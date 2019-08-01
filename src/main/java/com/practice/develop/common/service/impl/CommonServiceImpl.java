@@ -1,13 +1,9 @@
 package com.practice.develop.common.service.impl;
 
-import com.practice.develop.common.CommonDao;
-import com.practice.develop.common.service.CommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 /**
  * 类描述：公有基层方法接口类
@@ -15,7 +11,7 @@ import java.util.List;
  */
 @Service
 @Transactional
-public class CommonServiceImpl implements CommonService {
+public class CommonServiceImpl implements com.practice.develop.common.service.CommonServiceImpl {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
