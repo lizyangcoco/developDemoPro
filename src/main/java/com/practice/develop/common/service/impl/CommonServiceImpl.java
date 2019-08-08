@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 类描述：公有基层方法接口类
  * Created by 李泽阳 on 2019/2/15
  */
-@Service("commonServiceI")
+//@Service("commonServiceI")
 @Transactional
 public class CommonServiceImpl implements CommonServiceI {
 

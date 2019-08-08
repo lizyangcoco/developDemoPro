@@ -1,14 +1,15 @@
 package com.practice.develop;
 
-import com.practice.develop.expExcel.JxlExpExcel;
-import com.practice.develop.expExcel.JxlReadExcel;
-import com.practice.develop.expExcel.PoiExpExcel;
-import com.practice.develop.expExcel.PoiReadExcel;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.logging.Logger;
 
+@Configuration
 @SpringBootApplication
 public class DevelopApplication {
     private static Logger logger = Logger.getLogger(String.valueOf(DevelopApplication.class));
